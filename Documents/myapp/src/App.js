@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import Carusel from './components/Carusel/Carusel';
+import Card from './components/Card/Card';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Carusel/>      
+      <Navbar/>      
+      <Card
+      titulo={"Mouse logitech 230"}
+      descripcion={"Mouse con toda la tecnologia al dia adaptado para el gaming y para que puedas sentir esa comodidad al jugar tus videojuegos favoritos"}
+      img={"https://mexx-img-2019.s3.amazonaws.com/mouse-logitech-gamer-rgb-lila_38560_5.jpeg?v187"}
+      btnText={"Comprar"}
+      />
     </div>
   );
 }
